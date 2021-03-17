@@ -22,6 +22,7 @@ export default function ProjectDisplay(props) {
     preview,
     fullVideo,
     detailsPage,
+    fullDescription,
   } = props;
   const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
@@ -78,11 +79,11 @@ export default function ProjectDisplay(props) {
                     <img
                       src={preview}
                       alt="previewImg"
-                      style={{ width: "17vw" }}
+                      style={{ width: "25vw" }}
                       className={!visible ? styles.static : styles.inactive}
                     />
                   </Grid>
-                  <Grid item style={{ width: "17vw" }}>
+                  <Grid item style={{ width: "25vw" }}>
                     {/* <img
                     src={gif}
                     alt="gif"
@@ -142,7 +143,13 @@ export default function ProjectDisplay(props) {
             </Card>
           </Grid>
           <Grid item style={{ position: "relative" }}></Grid>
-          <ProjectDetails open={open} handleClose={handleClose} />
+          <ProjectDetails
+            open={open}
+            handleClose={handleClose}
+            fullVideo={fullVideo}
+            fullDescription={fullDescription}
+            title={title}
+          />
         </Grid>
       </VisibilitySensor>
     </React.Fragment>

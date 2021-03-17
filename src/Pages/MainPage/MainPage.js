@@ -6,8 +6,6 @@ import { CSSTransition } from "react-transition-group";
 import "./styles.css";
 import cloud1 from "../../Assets/cloud1.png";
 import Divider from "@material-ui/core/Divider";
-import Gif1 from "../../Assets/testGif1.gif";
-import Gif1Image from "../../Assets/testGifImage1.PNG";
 import DeloitteLogo from "../../Assets/deloitte_logo.png";
 import AppBar from "../../Components/AppBar/AppBar";
 import projectTUGVid from "../../Assets/projectTUGVid.mp4";
@@ -16,9 +14,102 @@ import projectLightPlayVid from "../../Assets/projectLightPlayVid.mp4";
 import projectLightPlayPreview from "../../Assets/projectLightPlayPreview.PNG";
 import projectManageRXVid from "../../Assets/projectManageRXVid.mp4";
 import projectManageRXPreview from "../../Assets/projectManageRXPreview.PNG";
+import projectManageRXFullVid from "../../Assets/projectManageRXFullVid.mp4";
+import projectTUGFullVid from "../../Assets/projectTUGFullVid.mp4";
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
 
 export default function MainPage() {
   const [inProp, setInProp] = useState(false);
+
+  const fullDescriptionManageRX = (
+    <p className={styles.details}>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} />
+        React | Flask | PostgreSQL
+      </div>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} /> Auth0 for
+        authentication, authorization, and role-based access
+      </div>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} /> AWS S3 for uploading
+        and displaying documents{" "}
+      </div>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} /> Logs for deleted
+        entries
+      </div>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} /> Admin panel to
+        promote/demote user roles
+      </div>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} /> Events calendar
+      </div>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} /> Rebuilt government
+        forms to be dynamically filled in
+      </div>
+    </p>
+  );
+
+  const fullDescriptionTUG = (
+    <p className={styles.details}>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} />
+        Ionic | Angular
+      </div>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} /> Firebase for saved
+        games and points system
+      </div>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} /> Google Maps API for
+        geolocation and custom map pins
+      </div>
+      <div style={{ alignItems: "none !important" }}>
+        <ArrowRightIcon className={styles.detailsIcon} /> Application used in
+        events for:
+      </div>
+      <div style={{ paddingLeft: "1.5em" }}>
+        National Bank of Canada, City of Toronto, Ryerson University <br />{" "}
+        Centenial College, Humber College, and more
+      </div>
+    </p>
+  );
+
+  const fullDescriptionLightPlay = (
+    <p className={styles.details}>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} />
+        Unity C# | Ardunio
+      </div>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} /> Created with the
+        intent of improving accessibility and gameplay
+      </div>
+      <div>
+        {" "}
+        <ArrowRightIcon
+          className={styles.detailsIcon}
+          style={{ opacity: "0" }}
+        />
+        experience of video games through ambient light indicators
+      </div>
+      <div>
+        <ArrowRightIcon className={styles.detailsIcon} /> Full thesis available{" "}
+        <MenuBookIcon
+          className={styles.thesisIcon}
+          onClick={() => {
+            window.open(
+              "https://uwspace.uwaterloo.ca/handle/10012/16112?fbclid=IwAR0bj2G4DEJ7e-jXn-6qe_JWmeTVTd0MV8A6LcPnrvPUGIwsUGvo3tuHCpI"
+            );
+          }}
+        />
+      </div>
+    </p>
+  );
 
   return (
     <React.Fragment>
@@ -134,6 +225,8 @@ export default function MainPage() {
             video={projectManageRXVid}
             preview={projectManageRXPreview}
             detailsPage={"ProjectManageRXDetails"}
+            fullVideo={projectManageRXFullVid}
+            fullDescription={fullDescriptionManageRX}
           />
         </Grid>
         <Grid item>
@@ -144,6 +237,8 @@ export default function MainPage() {
             video={projectTUGVid}
             preview={projectTUGPreview}
             detailsPage={"ProjectTUGDetails"}
+            fullVideo={projectTUGFullVid}
+            fullDescription={fullDescriptionTUG}
           />
         </Grid>
         <Grid item>
@@ -154,6 +249,8 @@ export default function MainPage() {
             video={projectLightPlayVid}
             preview={projectLightPlayPreview}
             detailsPage={"ProjectThesisDetails"}
+            fullVideo={projectLightPlayVid}
+            fullDescription={fullDescriptionLightPlay}
 
             // preview={projectTUGPreview}
           />

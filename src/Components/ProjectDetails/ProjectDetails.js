@@ -25,7 +25,14 @@ const Transition = forwardRef(function Transition(props, ref) {
   return <Grow ref={ref} {...props} />;
 });
 export default function ProjectDetails(props) {
-  const { handleClose, open, fullVideo } = props;
+  const {
+    handleClose,
+    open,
+    fullVideo,
+    fullDescription,
+    title,
+    lightPlayVid,
+  } = props;
 
   return (
     <Dialog
@@ -38,11 +45,35 @@ export default function ProjectDetails(props) {
       TransitionProps={{ timeout: { appear: 1000, enter: 1400, exit: 700 } }}
     >
       <CloseIcon className={styles.closeIcon} onClick={() => handleClose()} />
-      <DialogTitle id="simple-dialog-title">Set backup account</DialogTitle>
+      <DialogTitle className={styles.title}>{title}</DialogTitle>
 
-      <Grid container style={{ height: "50vh", width: "50vw" }}>
-        <Grid container justify="flex-end" item style={{ width: "100%" }}>
-          <Grid item></Grid>
+      <Grid
+        container
+        style={{ height: "60vh", width: "80vw" }}
+        alignItems="center"
+      >
+        <Grid
+          container
+          // justify="flex-end"
+          item
+          style={{ width: "100%" }}
+          justify="flex-start"
+          alignItems="center"
+        >
+          <Grid item xs={6} style={{ width: "50%", paddingLeft: "2em" }}>
+            <video width="100%" height="auto" autoPlay loop muted controls>
+              <source src={fullVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </Grid>
+          <Grid
+            item
+            xs={6}
+            style={{ paddingLeft: "2em" }}
+            className={styles.fullDescription}
+          >
+            {fullDescription}
+          </Grid>
         </Grid>
       </Grid>
       {/* <Grid item>

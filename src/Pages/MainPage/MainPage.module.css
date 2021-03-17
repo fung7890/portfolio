@@ -94,3 +94,20 @@ body::-webkit-scrollbar {
 .lineStyle:nth-child(5) {
   animation-delay: 1.2s;
 }
+
+
+.details > div {
+  display: flex;
+  align-items: center;
+}
+
+.detailsIcon {
+  opacity: 0.5;
+  font-size: 0.8vw;
+}
+
+.thesisIcon {
+  opacity: 0.5;
+  cursor: pointer;
+  padding-left: 0.5em;
+}
