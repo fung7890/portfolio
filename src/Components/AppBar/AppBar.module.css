@@ -1,0 +1,21 @@
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+.icon {
+  color: grey;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.linkedinIcon {
+  height: 2vw;
+  width: auto;
+  filter: opacity(50%);
+  margin-left: 0.3em;
+  cursor: pointer;
+}

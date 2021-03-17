@@ -1,0 +1,104 @@
+.container {
+  width: 75vw;
+}
+
+.projectTitle {
+  font-size: 1.5vw;
+  font-weight: 550;
+}
+
+.subTitle {
+  font-size: 1vw;
+  font-weight: 400;
+  padding-left: 0.5em;
+}
+
+.techListTitle {
+  font-size: 0.9vw;
+  font-weight: 300;
+  padding-left: 0.5em;
+}
+
+.fontBackwards {
+  animation: font-animation-backward 0.5s linear 0s;
+  animation-fill-mode: forwards;
+  font-family: "Shippori Mincho", serif;
+  /* position: absolute; */
+  z-index: 2;
+}
+
+.fontForwards {
+  animation: font-animation-foward 0.5s linear 0s;
+  animation-fill-mode: forwards;
+  font-family: "Shippori Mincho", serif;
+  /* position: absolute; */
+  z-index: 2;
+}
+
+.static {
+  position: absolute;
+  background: white;
+}
+
+.inactive {
+  position: absolute;
+  background: white;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* .card:hover {
+  z-index: -1;
+  filter: sepia(60%);
+  filter: opacity(15%);
+} */
+
+@keyframes font-animation-foward {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes font-animation-backward {
+  /* 25% {
+      right: 25px;
+      opacity: 0.25;
+    }
+    50% {
+      right: 100px;
+      opacity: 0.5;
+    }
+    75% {
+      right: 125px;
+      opacity: 0.75;
+    } */
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.detailsButton {
+  font-family: "Shippori Mincho", serif;
+  text-transform: none;
+  font-size: 0.7vw;
+
+}
+/* .gif {
+  opacity: 0.2;
+} */

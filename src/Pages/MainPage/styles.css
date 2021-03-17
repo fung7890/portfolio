@@ -1,0 +1,24 @@
+/* transition: opacity 1100ms linear 1000ms; 4th property is delay */
+
+.fade {
+  animation-delay: 0s;
+}
+
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1350ms linear 1350ms;
+}
+
+.fade-enter {
+  opacity: 0;
+  /* z-index: 1; */
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1350ms linear 1350ms;
+}

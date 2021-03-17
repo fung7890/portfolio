@@ -1,0 +1,19 @@
+.closeIcon {
+    position: absolute;
+    top: 0.5em; 
+    right: 0.5em;
+    cursor: pointer;
+}
+
+.fullDescription {
+    line-height: 2em;
+    font-size: 1vw;
+    font-family: "Shippori Mincho", serif;
+
+}
+
+.title >h2 {
+    font-weight: 500;
+    font-family: "Shippori Mincho", serif;
+    font-size: 1.5vw;
+}
