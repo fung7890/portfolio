@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 
 import "./App.css";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link,
@@ -22,17 +22,15 @@ function App() {
   // });
   return (
     <StylesProvider injectFirst>
-      <Portfolio />
-      {/* <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Route
           render={({ location }) => (
             <Switch location={location} key={location.pathname}>
               <Route exact path="/" render={() => <Portfolio />} />
-
             </Switch>
           )}
         />
-      </Router> */}
+      </Router>
     </StylesProvider>
   );
 }
