@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.92457b9c.chunk.css",
-    "main.js": "/portfolio/static/js/main.82e607e1.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.82e607e1.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.1ba8eacd.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.1ba8eacd.js.map",
-    "static/js/2.287df55b.chunk.js": "/portfolio/static/js/2.287df55b.chunk.js",
-    "static/js/2.287df55b.chunk.js.map": "/portfolio/static/js/2.287df55b.chunk.js.map",
-    "static/js/3.308bc920.chunk.js": "/portfolio/static/js/3.308bc920.chunk.js",
-    "static/js/3.308bc920.chunk.js.map": "/portfolio/static/js/3.308bc920.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.b2121f4e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b2121f4e.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.32735de8.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.32735de8.js.map",
+    "static/js/2.d60c35c4.chunk.js": "/portfolio/static/js/2.d60c35c4.chunk.js",
+    "static/js/2.d60c35c4.chunk.js.map": "/portfolio/static/js/2.d60c35c4.chunk.js.map",
+    "static/js/3.dc725d5a.chunk.js": "/portfolio/static/js/3.dc725d5a.chunk.js",
+    "static/js/3.dc725d5a.chunk.js.map": "/portfolio/static/js/3.dc725d5a.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.92457b9c.chunk.css.map": "/portfolio/static/css/main.92457b9c.chunk.css.map",
-    "static/js/2.287df55b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.287df55b.chunk.js.LICENSE.txt",
+    "static/js/2.d60c35c4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d60c35c4.chunk.js.LICENSE.txt",
     "static/media/cloud1.b4e120e0.png": "/portfolio/static/media/cloud1.b4e120e0.png",
     "static/media/deloitte_logo.46ffb6ff.png": "/portfolio/static/media/deloitte_logo.46ffb6ff.png",
     "static/media/logo.6ce24c58.svg": "/portfolio/static/media/logo.6ce24c58.svg",
@@ -28,9 +28,9 @@
     "static/media/testGifImage1.14e695e8.PNG": "/portfolio/static/media/testGifImage1.14e695e8.PNG"
   },
   "entrypoints": [
-    "static/js/runtime-main.1ba8eacd.js",
-    "static/js/2.287df55b.chunk.js",
+    "static/js/runtime-main.32735de8.js",
+    "static/js/2.d60c35c4.chunk.js",
     "static/css/main.92457b9c.chunk.css",
-    "static/js/main.82e607e1.chunk.js"
+    "static/js/main.b2121f4e.chunk.js"
   ]
 }
