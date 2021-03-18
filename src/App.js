@@ -22,17 +22,17 @@ function App() {
   // });
   return (
     <StylesProvider injectFirst>
-      <Router>
+      <Portfolio />
+      {/* <Router>
         <Route
           render={({ location }) => (
             <Switch location={location} key={location.pathname}>
               <Route exact path="/" render={() => <Portfolio />} />
 
-              {/* <Route exact path="/main" render={() => <MainPage />} /> */}
             </Switch>
           )}
         />
-      </Router>
+      </Router> */}
     </StylesProvider>
   );
 }
