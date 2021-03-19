@@ -8,14 +8,56 @@
 
 .icon {
   color: grey;
-  font-size: 2vw;
   cursor: pointer;
 }
 
 .linkedinIcon {
-  height: 2vw;
   width: auto;
   filter: opacity(50%);
   margin-left: 0.3em;
   cursor: pointer;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .icon {
+    font-size: 2vw;
+  }
+
+  .linkedinIcon {
+    height: 2vw;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .icon {
+    font-size: 2vw;
+  }
+
+  .linkedinIcon {
+    height: 2vw;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .icon {
+    font-size: 20px;
+  }
+
+  .linkedinIcon {
+    height: 20px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .icon {
+    font-size: 20px;
+  }
+
+  .linkedinIcon {
+    height: 20px;
+  }
 }

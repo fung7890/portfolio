@@ -23,82 +23,121 @@ export default function MainPage() {
   const [inProp, setInProp] = useState(false);
 
   const fullDescriptionManageRX = (
-    <p className={styles.details}>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} />
-        React | Flask | PostgreSQL
-      </div>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} /> Auth0 for
-        authentication, authorization, and role-based access
-      </div>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} /> AWS S3 for uploading
-        and displaying documents{" "}
-      </div>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} /> Logs for deleted
-        entries
-      </div>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} /> Admin panel to
-        promote/demote user roles
-      </div>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} /> Events calendar
-      </div>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} /> Rebuilt government
-        forms to be dynamically filled in
-      </div>
-    </p>
+    // <p className={styles.details}>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} />
+    //     React | Flask | PostgreSQL
+    //   </div>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> Auth0 for
+    //     authentication, authorization, and role-based access
+    //   </div>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> AWS S3 for uploading
+    //     and displaying documents{" "}
+    //   </div>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> Logs for deleted
+    //     entries
+    //   </div>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> Admin panel to
+    //     promote/demote user roles
+    //   </div>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> Events calendar
+    //   </div>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> Rebuilt government
+    //     forms to be dynamically filled in
+    //   </div>
+    // </p>
+
+    <ul>
+      <li>React | Flask | PostgreSQL</li>
+      <li>Auth0 for authentication, authorization, and role-based access</li>
+      <li>AWS S3 for uploading and displaying documents</li>
+      <li>Logs for deleted entries</li>
+      <li>Admin panel to promote/demote user roles</li>
+      <li>Events calendar</li>
+      <li>Rebuilt government forms to be dynamically filled in</li>
+    </ul>
   );
 
   const fullDescriptionTUG = (
-    <p className={styles.details}>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} />
-        Ionic | Angular
-      </div>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} /> Firebase for saved
-        games and points system
-      </div>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} /> Google Maps API for
-        geolocation and custom map pins
-      </div>
-      <div style={{ alignItems: "none !important" }}>
-        <ArrowRightIcon className={styles.detailsIcon} /> Application used in
-        events for:
-      </div>
-      <div style={{ paddingLeft: "1.5em" }}>
-        National Bank of Canada, City of Toronto, Ryerson University <br />{" "}
-        Centenial College, Humber College, and more
-      </div>
-    </p>
+    // <p className={styles.details}>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} />
+    //     Ionic | Angular
+    //   </div>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> Firebase for saved
+    //     games and points system
+    //   </div>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> Google Maps API for
+    //     geolocation and custom map pins
+    //   </div>
+    //   <div style={{ alignItems: "none !important" }}>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> Application used in
+    //     events for:
+    //   </div>
+    //   <div style={{ paddingLeft: "1.5em" }}>
+    //     National Bank of Canada, City of Toronto, Ryerson University <br />{" "}
+    //     Centenial College, Humber College, and more
+    //   </div>
+
+    // </p>
+    <ul>
+      <li>Ionic | Angular</li>
+      <li>Firebase for saved games and points system</li>
+      <li>Google Maps API for geolocation and custom map pins</li>
+      <li>
+        Application used in events for: National Bank of Canada, City of
+        Toronto, Ryerson University, and more
+      </li>
+    </ul>
   );
 
   const fullDescriptionLightPlay = (
-    <p className={styles.details}>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} />
-        Unity C# | Ardunio
-      </div>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} /> Created with the
-        intent of improving accessibility and gameplay
-      </div>
-      <div>
-        {" "}
-        <ArrowRightIcon
-          className={styles.detailsIcon}
-          style={{ opacity: "0" }}
-        />
+    // <p className={styles.details}>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} />
+    //     Unity C# | Ardunio
+    //   </div>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> Created with the
+    //     intent of improving accessibility and gameplay
+    //   </div>
+    //   <div>
+    //     {" "}
+    //     <ArrowRightIcon
+    //       className={styles.detailsIcon}
+    //       style={{ opacity: "0" }}
+    //     />
+    //     experience of video games through ambient light indicators
+    //   </div>
+    //   <div>
+    //     <ArrowRightIcon className={styles.detailsIcon} /> Full thesis available{" "}
+    //     <MenuBookIcon
+    //       className={styles.thesisIcon}
+    //       onClick={() => {
+    //         window.open(
+    //           "https://uwspace.uwaterloo.ca/handle/10012/16112?fbclid=IwAR0bj2G4DEJ7e-jXn-6qe_JWmeTVTd0MV8A6LcPnrvPUGIwsUGvo3tuHCpI"
+    //         );
+    //       }}
+    //     />
+    //   </div>
+    // </p>
+
+    <ul>
+      <li>Unity C# | Ardunio</li>
+      <li>
+        Created with the intent of improving accessibility and gameplay
         experience of video games through ambient light indicators
-      </div>
-      <div>
-        <ArrowRightIcon className={styles.detailsIcon} /> Full thesis available{" "}
+      </li>
+      <li>
+        Full thesis available{" "}
         <MenuBookIcon
           className={styles.thesisIcon}
           onClick={() => {
@@ -107,8 +146,8 @@ export default function MainPage() {
             );
           }}
         />
-      </div>
-    </p>
+      </li>
+    </ul>
   );
 
   return (
@@ -131,7 +170,9 @@ export default function MainPage() {
                   src={cloud1}
                   alt="cloud1"
                   style={{
+                    // height: "500px",
                     height: "500px",
+
                     position: "absolute",
                     zIndex: "1",
                     right: "40%",
@@ -200,7 +241,7 @@ export default function MainPage() {
                   }}
                 >
                   Currently on the Innovation Team at{" "}
-                  <img src={DeloitteLogo} width="140vw" />
+                  <img src={DeloitteLogo} className={styles.deloitteLogo} />
                 </p>
               </Grid>
             </Grid>

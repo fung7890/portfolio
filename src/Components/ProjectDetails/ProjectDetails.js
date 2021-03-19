@@ -43,11 +43,13 @@ export default function ProjectDetails(props) {
       // TransitionComponent={(props) => <Grow {...props} timeout={1200} />}
       TransitionComponent={Transition}
       TransitionProps={{ timeout: { appear: 1000, enter: 1400, exit: 700 } }}
+      className={styles.dialog}
+      PaperProps={{ style: { height: "80vh" } }}
     >
       <CloseIcon className={styles.closeIcon} onClick={() => handleClose()} />
       <DialogTitle className={styles.title}>{title}</DialogTitle>
 
-      <Grid
+      {/* <Grid
         container
         style={{ height: "60vh", width: "80vw" }}
         alignItems="center"
@@ -59,23 +61,46 @@ export default function ProjectDetails(props) {
           style={{ width: "100%" }}
           justify="flex-start"
           alignItems="center"
+        > */}
+
+      <Grid container style={{ padding: "2em" }} alignItems="center">
+        <Grid
+          item
+          md={7}
+          container
+          justify="center"
+          alignItems="center"
+          style={{ width: "100%", paddingLeft: "2em" }}
         >
-          <Grid item xs={6} style={{ width: "50%", paddingLeft: "2em" }}>
-            <video width="100%" height="auto" autoPlay loop muted controls>
-              <source src={fullVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </Grid>
-          <Grid
-            item
-            xs={6}
-            style={{ paddingLeft: "2em" }}
-            className={styles.fullDescription}
+          <video
+            autoPlay
+            loop
+            muted
+            controls
+            className={styles.vid}
+            style={{
+              maxHeight: "100%",
+              maxWidth: "100%",
+              height: "60vh",
+              width: "auto",
+            }}
           >
-            {fullDescription}
-          </Grid>
+            <source src={fullVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Grid>
+        <Grid
+          item
+          md={5}
+          style={{ paddingLeft: "1em" }}
+          className={styles.fullDescription}
+        >
+          {fullDescription}
+          {/* </Grid>
+        </Grid> */}
         </Grid>
       </Grid>
+
       {/* <Grid item>
           <video width="100%" height="auto" autoPlay loop muted>
             <source src={fullVideo} type="video/mp4" />

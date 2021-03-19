@@ -1,19 +1,61 @@
 .closeIcon {
-    position: absolute;
-    top: 0.5em; 
-    right: 0.5em;
-    cursor: pointer;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  cursor: pointer;
 }
 
 .fullDescription {
-    line-height: 2em;
-    font-size: 1vw;
-    font-family: "Shippori Mincho", serif;
-
+  font-family: "Shippori Mincho", serif;
 }
 
-.title >h2 {
-    font-weight: 500;
-    font-family: "Shippori Mincho", serif;
-    font-size: 1.5vw;
+.title > h2 {
+  font-weight: 500;
+  font-family: "Shippori Mincho", serif;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .fullDescription {
+    line-height: 3vw;
+    font-size: 1.2vw;
+  }
+
+  .title > h2 {
+    font-size: 1.8vw;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .fullDescription {
+    line-height: 3vw;
+    font-size: 1.2vw;
+  }
+
+  .title > h2 {
+    font-size: 1.8vw;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .fullDescription {
+    font-size: 20px;
+  }
+
+  .title > h2 {
+    font-size: 20px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .fullDescription {
+    font-size: 15px;
+  }
+
+  .title > h2 {
+    font-size: 15px;
+  }
 }

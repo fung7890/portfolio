@@ -48,67 +48,69 @@ export default function ProjectDisplay(props) {
 
   return (
     <React.Fragment>
-      <VisibilitySensor
-        onChange={(e) => visSet(e)}
-        offset={{ top: 0, sbottom: 0 }}
+      <Grid
+        container
+        style={{
+          position: "relative",
+          marginTop: "10em",
+          marginBottom: "10em",
+        }}
+        className={styles.container}
+        // justify="center"
       >
-        <Grid
-          container
-          style={{
-            position: "relative",
-            marginTop: "10em",
-            marginBottom: "10em",
-          }}
-          className={styles.container}
-          justify="center"
-        >
-          <Grid item style={{ width: "100%" }}>
-            <Card
-              style={{ borderRadius: "0px" }}
-              elevation={0}
-              className={styles.card}
-            >
-              <CardContent>
-                <Grid
-                  container
-                  item
-                  justify="flex-start"
-                  style={{ marginLeft: "10vw" }}
-                >
-                  <Grid item>
+        <Grid item container style={{ width: "100%" }}>
+          <Card
+            style={{ borderRadius: "0px" }}
+            elevation={0}
+            className={styles.card}
+          >
+            <CardContent>
+              <Grid
+                container
+                item
+                justify="center"
+                // style={{ marginLeft: "10vw" }}
+                alignItems="center"
+              >
+                {/* <Grid item>
                     <img
                       src={preview}
                       alt="previewImg"
                       style={{ width: "25vw" }}
                       className={!visible ? styles.static : styles.inactive}
                     />
-                  </Grid>
-                  <Grid item style={{ width: "25vw" }}>
-                    {/* <img
+                  </Grid> */}
+                <Grid item md={4}>
+                  {/* <img
                     src={gif}
                     alt="gif"
                     style={{ width: "30vw" }}
                     className={visible ? styles.active : ""}
                   /> */}
 
-                    <video
-                      width="100%"
-                      height="auto"
-                      autoPlay
-                      loop
-                      muted
-                      className={visible ? styles.active : ""}
-                    >
-                      <source src={video} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </Grid>
+                  <video
+                    width="100%"
+                    height="auto"
+                    autoPlay
+                    loop
+                    muted
+                    className={visible ? styles.active : ""}
+                  >
+                    <source src={video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </Grid>
+                <VisibilitySensor
+                  onChange={(e) => visSet(e)}
+                  offset={{ top: 0, bottom: 0 }}
+                >
                   <Grid
                     item
+                    md={5}
                     className={
                       visible ? styles.fontForwards : styles.fontBackwards
                     }
-                    style={{ paddingLeft: "8em" }}
+                    style={{ paddingLeft: "5em" }}
                   >
                     <Grid item className={styles.projectTitle}>
                       {title}
@@ -133,25 +135,25 @@ export default function ProjectDisplay(props) {
                       </Grid>
                     </Grid>
                   </Grid>
-                </Grid>
-                {/* <Grid className={styles.description}>{title}</Grid>
+                </VisibilitySensor>
+              </Grid>
+              {/* <Grid className={styles.description}>{title}</Grid>
             <Grid className={styles.projectTitle}>{title}</Grid> */}
-              </CardContent>
-              {/* <CardActions>
+            </CardContent>
+            {/* <CardActions>
             <Button size="small">Learn More</Button>
           </CardActions> */}
-            </Card>
-          </Grid>
-          <Grid item style={{ position: "relative" }}></Grid>
-          <ProjectDetails
-            open={open}
-            handleClose={handleClose}
-            fullVideo={fullVideo}
-            fullDescription={fullDescription}
-            title={title}
-          />
+          </Card>
         </Grid>
-      </VisibilitySensor>
+
+        <ProjectDetails
+          open={open}
+          handleClose={handleClose}
+          fullVideo={fullVideo}
+          fullDescription={fullDescription}
+          title={title}
+        />
+      </Grid>
     </React.Fragment>
   );
 }

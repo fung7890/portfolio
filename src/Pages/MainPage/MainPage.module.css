@@ -1,11 +1,56 @@
 .font {
-  font-size: 2.5em;
   font-family: "Shippori Mincho", serif;
 }
 
-.fontSmall {
-  font-size: 1em;
+.smallFont {
   font-family: "Shippori Mincho", serif;
+}
+
+.deloitteLogo {
+  width: 10em;
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  .font {
+    font-size: 2.5em;
+  }
+
+  .smallFont {
+    font-size: 1.2em;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .font {
+    font-size: 2.5em;
+  }
+
+  .smallFont {
+    font-size: 1.2em;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .font {
+    font-size: 25px;
+  }
+
+  .smallFont {
+    font-size: 12px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .font {
+    font-size: 25px;
+  }
+
+  .smallFont {
+    font-size: 12px;
+  }
 }
 
 .cloudPosition {
@@ -95,7 +140,6 @@ body::-webkit-scrollbar {
   animation-delay: 1.2s;
 }
 
-
 .details > div {
   display: flex;
   align-items: center;
@@ -110,4 +154,22 @@ body::-webkit-scrollbar {
   opacity: 0.5;
   cursor: pointer;
   padding-left: 0.5em;
+}
+
+/* ul {
+  list-style-type: square;
+} */
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\220E"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: lightslategray; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block;
+  width: 1.5em; /* Also needed for space (tweak if needed) */
+  margin-left: -1.5em; /* Also needed for space (tweak if needed) */
+  font-size: 0.8em;
 }
