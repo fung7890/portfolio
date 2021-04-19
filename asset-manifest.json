@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b153390.chunk.css",
-    "main.js": "/static/js/main.ceb4b255.chunk.js",
-    "main.js.map": "/static/js/main.ceb4b255.chunk.js.map",
+    "main.css": "/static/css/main.3d34b964.chunk.css",
+    "main.js": "/static/js/main.b99c8055.chunk.js",
+    "main.js.map": "/static/js/main.b99c8055.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ec3b698a.js",
     "runtime-main.js.map": "/static/js/runtime-main.ec3b698a.js.map",
-    "static/js/2.6105ec00.chunk.js": "/static/js/2.6105ec00.chunk.js",
-    "static/js/2.6105ec00.chunk.js.map": "/static/js/2.6105ec00.chunk.js.map",
+    "static/js/2.e77e1b4d.chunk.js": "/static/js/2.e77e1b4d.chunk.js",
+    "static/js/2.e77e1b4d.chunk.js.map": "/static/js/2.e77e1b4d.chunk.js.map",
     "static/js/3.dc725d5a.chunk.js": "/static/js/3.dc725d5a.chunk.js",
     "static/js/3.dc725d5a.chunk.js.map": "/static/js/3.dc725d5a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2b153390.chunk.css.map": "/static/css/main.2b153390.chunk.css.map",
-    "static/js/2.6105ec00.chunk.js.LICENSE.txt": "/static/js/2.6105ec00.chunk.js.LICENSE.txt",
+    "static/css/main.3d34b964.chunk.css.map": "/static/css/main.3d34b964.chunk.css.map",
+    "static/js/2.e77e1b4d.chunk.js.LICENSE.txt": "/static/js/2.e77e1b4d.chunk.js.LICENSE.txt",
     "static/media/cloud1.b4e120e0.png": "/static/media/cloud1.b4e120e0.png",
     "static/media/deloitte_logo.46ffb6ff.png": "/static/media/deloitte_logo.46ffb6ff.png",
     "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
@@ -29,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ec3b698a.js",
-    "static/js/2.6105ec00.chunk.js",
-    "static/css/main.2b153390.chunk.css",
-    "static/js/main.ceb4b255.chunk.js"
+    "static/js/2.e77e1b4d.chunk.js",
+    "static/css/main.3d34b964.chunk.css",
+    "static/js/main.b99c8055.chunk.js"
   ]
 }
