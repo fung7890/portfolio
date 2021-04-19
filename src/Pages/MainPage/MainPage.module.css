@@ -10,7 +10,7 @@
   width: 10em;
 }
 /* Large desktop */
-@media (min-width: 1200px) {
+@media (min-width: 978px) {
   .font {
     font-size: 2.5em;
   }
@@ -88,23 +88,11 @@ body::-webkit-scrollbar {
   }
 }
 
-/* @keyframes filling {
-  from {
-    fill: red;
-    fill-opacity: 0;
-  }
-  to {
-    fill: red;
-    fill-opacity: 1;
-  }
-} */
 
 .lineStyle {
   fill: none;
   stroke: purple;
   stroke-width: 0.27px;
-  /* stroke-width: 1px; */
-
   stroke-linecap: butt;
   stroke-linejoin: miter;
   stroke-opacity: 0.3;
@@ -173,3 +161,22 @@ ul li::before {
   margin-left: -1.5em; /* Also needed for space (tweak if needed) */
   font-size: 0.8em;
 }
+
+.cloud {
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+  right: 40%;
+  top: -20%;
+
+}
+
+
+@media (max-width: 1200px) {
+  .lineStyle {
+  visibility: hidden;
+}
+  .cloud {
+    visibility: hidden;
+  }
+} 
